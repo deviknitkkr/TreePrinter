@@ -1,5 +1,6 @@
 package com.demo;
 
+import com.devik.Color;
 import com.devik.file.FileTreePrinter;
 import com.devik.TreePrinter;
 import com.devik.file.FileTreePrinterColored;
@@ -10,10 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        File file=new File(".");
+        File file=new File("./src");
 
-        TreePrinter treePrinter=new FileTreePrinterColored(file);
-
+        FileTreePrinterColored treePrinter=new FileTreePrinterColored(file);
         treePrinter.visitAndPrint();
+
     }
 }
