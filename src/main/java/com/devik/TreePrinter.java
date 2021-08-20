@@ -58,7 +58,7 @@ public abstract class TreePrinter {
             return;
 
         StringBuilder paddingBuilder=new StringBuilder(padding);
-        paddingBuilder.append(hasMore?"│  ":"     ");
+        paddingBuilder.append(hasMore?"│  ":"   ");
 
         Object [] childs=getChild(node);
         for(int i=0;i<childs.length;i++){
