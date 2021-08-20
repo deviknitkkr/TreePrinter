@@ -44,6 +44,7 @@ This code will produce below output.
 
 Also in case of FileTreePrinterColored you can set custom colors.
 ```java
+
 public class Main {
 
     public static void main(String[] args) {
@@ -56,7 +57,7 @@ public class Main {
         treePrinter.setHiddenFolderColor(Color);
         treePrinter.setExecutableFileColor(Color);
         treePrinter.setNonExecutableFileColor(Color);
-        or
+        //or
         treePrinter.setNonExecutableFileColor(Color.valueOf("color asci"));
 
         
@@ -71,6 +72,7 @@ public class Main {
 If you want to print other than file tree than you can use TreePrinter abstract class.
 In that case you need to implement three methods.
 ```java
+
  Object obj;
         TreePrinter treePrinter=new TreePrinter(obj) {
             @Override
@@ -93,7 +95,8 @@ In that case you need to implement three methods.
  
  for ie. you want to printBinary tree than you can do something like below...
  ```java
- Object obj;
+
+ Object obj; //here obj is root of Binary tree
         TreePrinter treePrinter=new TreePrinter(obj) {
             @Override
             public Object[] getChild(Object obj) {
@@ -103,7 +106,7 @@ In that case you need to implement three methods.
 
             @Override
             public String getValue(Object obj) {
-                return ((Node)onj).getValue();
+                return ((Node)obj).getValue();
             }
 
             @Override
