@@ -6,10 +6,11 @@ import java.io.File;
 
 import static com.devik.Color.*;
 
-public class FileTreePrinterColored extends FileTreePrinter{
-    private Color folder_color= BLUE;
-    private Color executable_file_color= GREEN;
-    private Color non_executable_file_color= WHITE;
+public class FileTreePrinterColored extends FileTreePrinter {
+    private Color folderColor = BLUE;
+    private Color hiddenFolderColor = YELLOW;
+    private Color executableFileColor = GREEN;
+    private Color nonExecutableFileColor = WHITE;
 
     public FileTreePrinterColored(Object root) {
         super(root);
@@ -17,24 +18,34 @@ public class FileTreePrinterColored extends FileTreePrinter{
 
     @Override
     public String getValue(Object obj) {
-        File file=(File)obj;
-        if(file.isDirectory())
-            return folder_color+super.getValue(obj)+RESET;
-        else if(file.canExecute())
-            return executable_file_color+super.getValue(obj)+RESET;
+        File file = (File) obj;
+        if (file.isDirectory()) {
+
+            if (file.isHidden())
+                return hiddenFolderColor + super.getValue(obj) + RESET;
+
+            return folderColor + super.getValue(obj) + RESET;
+
+        } else if (file.canExecute())
+            return executableFileColor + super.getValue(obj) + RESET;
+
         else
-            return non_executable_file_color+super.getValue(obj)+RESET;
+            return nonExecutableFileColor + super.getValue(obj) + RESET;
     }
 
-    public void setFolder_color(Color folder_color) {
-        this.folder_color = folder_color;
+    public void setFolderColor(Color folderColor) {
+        this.folderColor = folderColor;
     }
 
-    public void setExecutable_file_color(Color executable_file_color) {
-        this.executable_file_color = executable_file_color;
+    public void setHiddenFolderColor(Color hiddenFolderColor) {
+        this.hiddenFolderColor = hiddenFolderColor;
     }
 
-    public void setNon_executable_file_color(Color non_executable_file_color) {
-        this.non_executable_file_color = non_executable_file_color;
+    public void setExecutableFileColor(Color executableFileColor) {
+        this.executableFileColor = executableFileColor;
+    }
+
+    public void setNonExecutableFileColor(Color nonExecutableFileColor) {
+        this.nonExecutableFileColor = nonExecutableFileColor;
     }
 }
