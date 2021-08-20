@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        File file=new File("./src");
+        File file=new File(".");
 
         FileTreePrinter treePrinter=new FileTreePrinter(file);
         treePrinter.visitAndPrint();
@@ -20,7 +20,63 @@ public class Main {
 ```
 This code will produce below output.
 
-![image](https://user-images.githubusercontent.com/41135360/130220203-0580a2bb-075c-4f67-8064-f99f4df6dd49.png)
+
+``` txt
+TreePrinter
+├─.gitignore
+├─.idea
+│  ├─.gitignore
+│  ├─compiler.xml
+│  ├─jarRepositories.xml
+│  ├─misc.xml
+│  ├─uiDesigner.xml
+│  └─vcs.xml
+├─LICENSE
+├─pom.xml
+├─README.md
+├─src
+│  └─main
+│     └─java
+│        └─com
+│           ├─demo
+│           │  └─Main.java
+│           └─devik
+│              ├─Color.java
+│              ├─file
+│              │  ├─FileTreePrinter.java
+│              │  └─FileTreePrinterColored.java
+│              └─TreePrinter.java
+├─.project
+├─.settings
+│  ├─org.eclipse.m2e.core.prefs
+│  ├─org.eclipse.jdt.core.prefs
+│  └─org.eclipse.jdt.apt.core.prefs
+├─target
+│  ├─classes
+│  │  └─com
+│  │     ├─devik
+│  │     │  ├─file
+│  │     │  │  ├─FileTreePrinter.class
+│  │     │  │  └─FileTreePrinterColored.class
+│  │     │  ├─TreePrinter.class
+│  │     │  └─Color.class
+│  │     └─demo
+│  │        └─Main.class
+│  ├─test-classes
+│  ├─maven-status
+│  │  └─maven-compiler-plugin
+│  │     └─compile
+│  │        └─default-compile
+│  │           ├─createdFiles.lst
+│  │           └─inputFiles.lst
+│  ├─generated-sources
+│  │  └─annotations
+│  ├─maven-archiver
+│  │  └─pom.properties
+│  └─TreePrinter-1.0-SNAPSHOT.jar
+└─.classpath
+```
+
 
 2. FileTreePrinterColored
 ```java
