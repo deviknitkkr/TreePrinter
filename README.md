@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        File file=new File(".");
+        File file=new File("./src");
 
         FileTreePrinter treePrinter=new FileTreePrinter(file);
         treePrinter.visitAndPrint();
@@ -22,59 +22,22 @@ This code will produce below output.
 
 
 ``` txt
-TreePrinter
-├─.gitignore
-├─.idea
-│  ├─.gitignore
-│  ├─compiler.xml
-│  ├─jarRepositories.xml
-│  ├─misc.xml
-│  ├─uiDesigner.xml
-│  └─vcs.xml
-├─LICENSE
-├─pom.xml
-├─README.md
-├─src
-│  └─main
-│     └─java
-│        └─com
-│           ├─demo
-│           │  └─Main.java
-│           └─devik
-│              ├─Color.java
-│              ├─file
-│              │  ├─FileTreePrinter.java
-│              │  └─FileTreePrinterColored.java
-│              └─TreePrinter.java
-├─.project
-├─.settings
-│  ├─org.eclipse.m2e.core.prefs
-│  ├─org.eclipse.jdt.core.prefs
-│  └─org.eclipse.jdt.apt.core.prefs
-├─target
-│  ├─classes
+src
+├─main
+│  ├─java
 │  │  └─com
-│  │     ├─devik
-│  │     │  ├─file
-│  │     │  │  ├─FileTreePrinter.class
-│  │     │  │  └─FileTreePrinterColored.class
-│  │     │  ├─TreePrinter.class
-│  │     │  └─Color.class
-│  │     └─demo
-│  │        └─Main.class
-│  ├─test-classes
-│  ├─maven-status
-│  │  └─maven-compiler-plugin
-│  │     └─compile
-│  │        └─default-compile
-│  │           ├─createdFiles.lst
-│  │           └─inputFiles.lst
-│  ├─generated-sources
-│  │  └─annotations
-│  ├─maven-archiver
-│  │  └─pom.properties
-│  └─TreePrinter-1.0-SNAPSHOT.jar
-└─.classpath
+│  │     ├─demo
+│  │     │  └─Main.java
+│  │     └─devik
+│  │        ├─Color.java
+│  │        ├─file
+│  │        │  ├─FileTreePrinter.java
+│  │        │  └─FileTreePrinterColored.java
+│  │        └─TreePrinter.java
+│  └─resources
+└─test
+   └─java
+
 ```
 
 
