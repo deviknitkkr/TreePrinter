@@ -1,9 +1,11 @@
-package com.devik;
+package com.devik.file;
+
+import com.devik.TreePrinter;
 
 import java.io.File;
 import java.io.IOException;
 
-public class FileTreePrinter extends TreePrinter{
+public class FileTreePrinter extends TreePrinter {
 
     public FileTreePrinter(Object root) {
         super(root);

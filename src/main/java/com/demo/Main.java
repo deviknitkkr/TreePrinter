@@ -1,18 +1,19 @@
 package com.demo;
 
-import com.devik.FileTreePrinter;
+import com.devik.file.FileTreePrinter;
 import com.devik.TreePrinter;
+import com.devik.file.FileTreePrinterColored;
 
 import java.io.File;
-import java.io.IOException;
 
 public class Main {
+
     public static void main(String[] args) {
 
         File file=new File(".");
 
-        TreePrinter treePrinter=new FileTreePrinter(file);
+        TreePrinter treePrinter=new FileTreePrinterColored(file);
 
-        System.out.println(treePrinter.visitAndReturn());
+        treePrinter.visitAndPrint();
     }
 }
