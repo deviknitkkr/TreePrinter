@@ -53,7 +53,7 @@ public class Main {
         treePrinter.visitAndPrint();
         //  or
         //  StringBuilder sb=treePrinter.visitAndReturn();
-        //  sout(sb);
+        //  System.out.println(sb);
     }
 }
 ```
@@ -84,7 +84,7 @@ public class Main {
         treePrinter.visitAndPrint();
         //  or
         //  StringBuilder sb=treePrinter.visitAndReturn();
-        //  sout(sb);
+        //  System.out.println(sb);
     }
 }
 ```
