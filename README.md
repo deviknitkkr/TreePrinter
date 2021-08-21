@@ -1,4 +1,6 @@
 # TreePrinter
+[![](https://jitpack.io/v/deviknitkkr/TreePrinter.svg)](https://jitpack.io/#deviknitkkr/TreePrinter)
+
 
 I have created two classes for printing FilesStructure.
 
