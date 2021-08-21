@@ -2,7 +2,7 @@
 
 I have created two classes for printing FilesStructure.
 
-1. FileTreePrinter
+## 1.FileTreePrinter
 ```java
 public class Main {
 
@@ -20,9 +20,28 @@ public class Main {
 ```
 This code will produce below output.
 
-![image](https://user-images.githubusercontent.com/41135360/130220203-0580a2bb-075c-4f67-8064-f99f4df6dd49.png)
 
-2. FileTreePrinterColored
+``` txt
+src
+├─main
+│  ├─java
+│  │  └─com
+│  │     ├─demo
+│  │     │  └─Main.java
+│  │     └─devik
+│  │        ├─Color.java
+│  │        ├─file
+│  │        │  ├─FileTreePrinter.java
+│  │        │  └─FileTreePrinterColored.java
+│  │        └─TreePrinter.java
+│  └─resources
+└─test
+   └─java
+
+```
+
+
+## 2.FileTreePrinterColored
 ```java
 public class Main {
 
@@ -43,6 +62,7 @@ This code will produce below output.
 ![image](https://user-images.githubusercontent.com/41135360/130220535-298ff8c5-3f87-46dc-a031-d8212e090e5b.png)
 
 Also in case of FileTreePrinterColored you can set custom colors.
+
 ```java
 
 public class Main {
@@ -69,8 +89,9 @@ public class Main {
 }
 ```
 
-If you want to print other than file tree than you can use TreePrinter abstract class.
+If you want to print other than file tree than you can use **TreePrinter** abstract class.
 In that case you need to implement three methods.
+
 ```java
 
  Object obj;
@@ -93,7 +114,7 @@ In that case you need to implement three methods.
         // Here obj is the root of TreeStructure.
  ```
  
- for ie. you want to printBinary tree than you can do something like below...
+ for ie. if you want to print BinaryTree than you can do something like below...
  ```java
 
  Object obj; //here obj is root of Binary tree
