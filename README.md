@@ -1,28 +1,10 @@
 # TreePrinter
 [![](https://jitpack.io/v/deviknitkkr/TreePrinter.svg)](https://jitpack.io/#deviknitkkr/TreePrinter)
 
-To add this library to your project
+To add this library to your project, click on JitPack badge.
+You can also manually add Jar file, you can find jar file in release section.
 
-### Maven
-```xml
-
-
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
-
-
-
-	<dependency>
-	    <groupId>com.github.deviknitkkr</groupId>
-	    <artifactId>TreePrinter</artifactId>
-	    <version>Tag</version>
-	</dependency>
-
-```
+Demo:
 I have created two classes for printing FilesStructure.
 
 ## 1.FileTreePrinter
